@@ -1,0 +1,18 @@
+<h1>Map of the house</h1>
+<div id="container">
+  <div id="showMap">
+    <div id="map"></div>
+    <button (click)="userMap()">current Location</button>
+    <button (click)="houseMap()">Reload Map</button>
+  </div>
+  <div id="weather">
+    <h1>Weather</h1>
+    <h3>Condition: </h3>
+    <p>{{this.condition}}</p>
+    <h3>Image:</h3>
+    <img [src]="image">
+    <h3>Temperature:</h3>
+    <p>{{this.temperature}}</p>
+  </div>
+</div>
+
